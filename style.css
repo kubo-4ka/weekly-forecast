@@ -128,4 +128,5 @@ button:hover {
 .footer a {
     color: #bbb;
     text-decoration: underline;
+    font-size: 0.6em;
 }
