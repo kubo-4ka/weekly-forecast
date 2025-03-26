@@ -49,14 +49,14 @@ button:hover {
 .weather-container {
     display: flex;
     flex-direction: column;
-    gap: 0.75em;
+    gap: 0.1em;
 }
 
 .weather-day {
     background-color: #2c2c2c;
     padding: 0.5em 0.75em;
     border-radius: 6px;
-    font-size: 1em;
+    font-size: 0.8em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,8 +70,8 @@ button:hover {
     background-color: #2c2c2c;
     padding: 0.5em;
     border-radius: 6px;
-    margin-bottom: 0.5em;
-    font-size: 1em;
+    margin-bottom: 0;
+    font-size: 0.8em;
 }
 
 .weather-col {
@@ -83,7 +83,7 @@ button:hover {
 
 /* 区切り「/」の調整 */
 .weather-col:nth-child(6) {
-    min-width: 1em;
+    min-width: 0.8em;
 }
 
 .weather-info {
@@ -120,9 +120,9 @@ button:hover {
 
 .footer {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.6em;
     color: #aaa;
-    margin-top: 2em;
+    margin-top: 0.8em;
 }
 
 .footer a {
