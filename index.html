@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>週間予報アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>週間天気予報</h1>
+        <div class="control-panel">
+            <select id="location-select"></select>
+            <button id="fetch-button">予報取得</button>
+        </div>
+        <div id="weather-container" class="weather-container"></div>
+        <footer class="footer">
+            天気データ提供：<a href="https://open-meteo.com" target="_blank" rel="noopener noreferrer">Open-Meteo</a><br>
+            公式の利用規約に従ってご利用ください。<br><br>
+            このページの説明は以下の記事に記載します。<br>
+            <a href="https://qiita.com/kubo4ka/items/9b7fbeca3e28599d8bc0" target="_blank">https://qiita.com/kubo4ka/items/9b7fbeca3e28599d8bc0</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

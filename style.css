@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.app-container {
+    padding: 1em;
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.control-panel {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+select, button {
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: #2e2e2e;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.weather-day {
+    background-color: #2c2c2c;
+    padding: 0.5em 0.75em;
+    border-radius: 6px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.weather-day-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #2c2c2c;
+    padding: 0.5em;
+    border-radius: 6px;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.weather-col {
+    flex: 0 0 auto;
+    min-width: 3em;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+/* 区切り「/」の調整 */
+.weather-col:nth-child(6) {
+    min-width: 1em;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weather-emoji {
+    font-size: 2rem;
+}
+
+.col {
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.col.date {
+    width: 5em; /* 例: "3/30 日" に収まるサイズ */
+}
+
+.col.weather {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.col.temp {
+    width: 8em;
+    text-align: right;
+    font-variant-numeric: tabular-nums; /* 桁を揃える */
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 2em;
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: underline;
+}
